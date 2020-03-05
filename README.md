@@ -1,10 +1,13 @@
-# Enable 'Embedded GDB' debugging in CLion for Rust targets
+# Enable 'Embedded GDB' debugging with peripheral register views in CLion for Rust targets
 
 Current CLion builds require CMake targets to use the recent 'Embedded GDB' debug option.
 This cmake module provides a simple wrapper around Cargo to create CMake targets for
 rust executables, which enables the use of the embedded GDB debugger in CLion.
 
 Hopefully this work around will be rendered obsolete soon by CLion's continuing improvement.
+
+- CLion Embedded GDB tutorial: https://www.jetbrains.com/help/clion/embedded-gdb-server.html
+- SVD files used by stm32-rs: https://github.com/stm32-rs/stm32-rs/tree/master/svd
 
 ## Usage
 
