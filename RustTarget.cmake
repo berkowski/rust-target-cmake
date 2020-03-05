@@ -77,7 +77,6 @@ function(add_rust_target name)
 
     if(DEFINED TARGET_FEATURES)
         list(JOIN TARGET_FEATURES " " TARGET_FEATURES_STR)
-        MESSAGE(": FEATURES ${TARGET_FEATURES_STR}")
         list(APPEND CARGO_COMMAND --features "${TARGET_FEATURES_STR}")
     endif(DEFINED TARGET_FEATURES)
 
